@@ -24,7 +24,7 @@ m.francais.lelales.Module = function (e) {
 
         var image = $('<img/>', {
             style: 'width: 50%',
-            src: 'exercises/m/francais/lelales/img/card_1.png'
+            src: 'javascripts/exercises/m/francais/lelales/img/card_1.png'
         });
 
         image.appendTo(div);
@@ -52,7 +52,7 @@ m.francais.lelales.Module = function (e) {
 
         var image = $('<img/>', {
             style: 'width: 80%',
-            src: 'exercises/m/francais/lelales/img/example.png'
+            src: 'javascripts/exercises/m/francais/lelales/img/example.png'
         });
 
         image.appendTo(div);

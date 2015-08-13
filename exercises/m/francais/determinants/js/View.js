@@ -67,11 +67,11 @@ m.francais.determinants.View = function (mdl, div, number, min, max, sh) {
     this.next = function () {
         model.next();
         $('#image_md_lg').attr('src',
-            'exercises/m/francais/lelales/img/card_' + model.getImageIndex() + '.png');
+            'javascripts/exercises/m/francais/lelales/img/card_' + model.getImageIndex() + '.png');
         $('#image_sm').attr('src',
-            'exercises/m/francais/lelales/img/card_' + model.getImageIndex() + '.png');
+            'javascripts/exercises/m/francais/lelales/img/card_' + model.getImageIndex() + '.png');
         $('#image_xs').attr('src',
-            'exercises/m/francais/lelales/img/card_' + model.getImageIndex() + '.png');
+            'javascripts/exercises/m/francais/lelales/img/card_' + model.getImageIndex() + '.png');
         this.update();
     };
 
@@ -155,7 +155,7 @@ m.francais.determinants.View = function (mdl, div, number, min, max, sh) {
         if (style === "md_lg") {
             img = $('<img/>', {
                 style: 'background-color: #FFFFFF; padding: 10px; border-radius: 6px 6px 6px 6px; display: block; margin-left: auto; margin-right: auto; border: 1px solid #000000',
-                src: 'exercises/m/francais/lelales/img/card_' + i + '.png',
+                src: 'javascripts/exercises/m/francais/lelales/img/card_' + i + '.png',
                 height: height / 2,
                 id: 'image_md_lg'
             });
@@ -167,7 +167,7 @@ m.francais.determinants.View = function (mdl, div, number, min, max, sh) {
         } else if (style === "sm") {
             img = $('<img/>', {
                 style: 'background-color: #FFFFFF; padding: 10px; border-radius: 6px 6px 6px 6px; display: block; margin-left: auto; margin-right: auto; border: 1px solid #000000',
-                src: 'exercises/m/francais/lelales/img/card_' + i + '.png',
+                src: 'javascripts/exercises/m/francais/lelales/img/card_' + i + '.png',
                 height: height / 2,
                 id: 'image_sm'
             });
@@ -179,7 +179,7 @@ m.francais.determinants.View = function (mdl, div, number, min, max, sh) {
         } else if (style === "xs") {
             img = $('<img/>', {
                 style: 'background-color: #FFFFFF; padding: 10px; border-radius: 6px 6px 6px 6px; display: block; margin-left: auto; margin-right: auto; border: 1px solid #000000',
-                src: 'exercises/m/francais/lelales/img/card_' + i + '.png',
+                src: 'javascripts/exercises/m/francais/lelales/img/card_' + i + '.png',
                 height: height / 3,
                 id: 'image_xs'
             });
