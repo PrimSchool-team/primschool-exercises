@@ -1,9 +1,9 @@
-		Pepit Mobil development team
-		============================
+		PrimSchool development team
+		===========================
 
 Copyright
 =========
-- Copyright © 2013-2014
+- Copyright © 2013-2015
 
 Authors
 =======
