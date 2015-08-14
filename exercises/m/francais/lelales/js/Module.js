@@ -24,7 +24,7 @@ m.francais.lelales.Module = function (e) {
 
         var image = $('<img/>', {
             style: 'width: 50%',
-            src: 'javascripts/exercises/m/francais/lelales/img/card_1.png'
+            src: e.url() + 'exercises/m/francais/lelales/img/card_1.png'
         });
 
         image.appendTo(div);
@@ -52,7 +52,7 @@ m.francais.lelales.Module = function (e) {
 
         var image = $('<img/>', {
             style: 'width: 80%',
-            src: 'javascripts/exercises/m/francais/lelales/img/example.png'
+            src: e.url() + 'exercises/m/francais/lelales/img/example.png'
         });
 
         image.appendTo(div);
@@ -63,35 +63,35 @@ m.francais.lelales.Module = function (e) {
 
         if (currentExercise == 1) {
             if (!view) {
-                view = new m.francais.lelales.View(this, div, 25, 0, 24,
+                view = new m.francais.lelales.View(this, e.url(), div, 25, 0, 24,
                     n * this.getQuestionNumber(currentExercise, n));
             } else {
                 view.restart(div, n * this.getQuestionNumber(currentExercise, currentModule));
             }
         } else if (currentExercise == 2) {
             if (!view) {
-                view = new m.francais.lelales.View(this, div, 25, 25, 49,
+                view = new m.francais.lelales.View(this, e.url(), div, 25, 25, 49,
                     n * this.getQuestionNumber(currentExercise, currentModule));
             } else {
                 view.restart(div, n * this.getQuestionNumber(currentExercise, currentModule));
             }
         } else if (currentExercise == 3) {
             if (!view) {
-                view = new m.francais.lelales.View(this, div, 25, 50, 74,
+                view = new m.francais.lelales.View(this, e.url(), div, 25, 50, 74,
                     n * this.getQuestionNumber(currentExercise, currentModule));
             } else {
                 view.restart(div, n * this.getQuestionNumber(currentExercise, currentModule));
             }
         } else if (currentExercise == 4) {
             if (!view) {
-                view = new m.francais.lelales.View(this, div, 25, 75, 99,
+                view = new m.francais.lelales.View(this, e.url(), div, 25, 75, 99,
                     n * this.getQuestionNumber(currentExercise, currentModule));
             } else {
                 view.restart(div, n * this.getQuestionNumber(currentExercise, currentModule));
             }
         } else if (currentExercise == 5) {
             if (!view) {
-                view = new m.francais.lelales.View(this, div, 25, 100, 124,
+                view = new m.francais.lelales.View(this, e.url(), div, 25, 100, 124,
                     n * this.getQuestionNumber(currentExercise, currentModule));
             } else {
                 view.restart(div, n * this.getQuestionNumber(currentExercise, currentModule));

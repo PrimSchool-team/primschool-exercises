@@ -1,4 +1,4 @@
-m.francais.determinants.View = function (mdl, div, number, min, max, sh) {
+m.francais.determinants.View = function (mdl, u, div, number, min, max, sh) {
 
 // public methods
     this.build_buttons = function (buttons_div, style) {
@@ -34,11 +34,12 @@ m.francais.determinants.View = function (mdl, div, number, min, max, sh) {
         bootstrap_alert.info(module.getWrongResponseMessage(), '');
     };
 
-    this.init = function (mdl, view, number, min, max, sh) {
+    this.init = function (mdl, u, view, number, min, max, sh) {
         height = window.innerHeight;
         width = window.innerWidth;
 
         module = mdl;
+        url = u;
     };
 
     this.init_div = function (view) {
@@ -67,11 +68,11 @@ m.francais.determinants.View = function (mdl, div, number, min, max, sh) {
     this.next = function () {
         model.next();
         $('#image_md_lg').attr('src',
-            'javascripts/exercises/m/francais/lelales/img/card_' + model.getImageIndex() + '.png');
+            url + 'exercises/m/francais/lelales/img/card_' + model.getImageIndex() + '.png');
         $('#image_sm').attr('src',
-            'javascripts/exercises/m/francais/lelales/img/card_' + model.getImageIndex() + '.png');
+            url + 'exercises/m/francais/lelales/img/card_' + model.getImageIndex() + '.png');
         $('#image_xs').attr('src',
-            'javascripts/exercises/m/francais/lelales/img/card_' + model.getImageIndex() + '.png');
+            url + 'exercises/m/francais/lelales/img/card_' + model.getImageIndex() + '.png');
         this.update();
     };
 
@@ -155,7 +156,7 @@ m.francais.determinants.View = function (mdl, div, number, min, max, sh) {
         if (style === "md_lg") {
             img = $('<img/>', {
                 style: 'background-color: #FFFFFF; padding: 10px; border-radius: 6px 6px 6px 6px; display: block; margin-left: auto; margin-right: auto; border: 1px solid #000000',
-                src: 'javascripts/exercises/m/francais/lelales/img/card_' + i + '.png',
+                src: url + 'exercises/m/francais/lelales/img/card_' + i + '.png',
                 height: height / 2,
                 id: 'image_md_lg'
             });
@@ -167,7 +168,7 @@ m.francais.determinants.View = function (mdl, div, number, min, max, sh) {
         } else if (style === "sm") {
             img = $('<img/>', {
                 style: 'background-color: #FFFFFF; padding: 10px; border-radius: 6px 6px 6px 6px; display: block; margin-left: auto; margin-right: auto; border: 1px solid #000000',
-                src: 'javascripts/exercises/m/francais/lelales/img/card_' + i + '.png',
+                src: url + 'exercises/m/francais/lelales/img/card_' + i + '.png',
                 height: height / 2,
                 id: 'image_sm'
             });
@@ -179,7 +180,7 @@ m.francais.determinants.View = function (mdl, div, number, min, max, sh) {
         } else if (style === "xs") {
             img = $('<img/>', {
                 style: 'background-color: #FFFFFF; padding: 10px; border-radius: 6px 6px 6px 6px; display: block; margin-left: auto; margin-right: auto; border: 1px solid #000000',
-                src: 'javascripts/exercises/m/francais/lelales/img/card_' + i + '.png',
+                src: url + 'exercises/m/francais/lelales/img/card_' + i + '.png',
                 height: height / 3,
                 id: 'image_xs'
             });
@@ -211,6 +212,7 @@ m.francais.determinants.View = function (mdl, div, number, min, max, sh) {
     var module;
     var model;
     var controller;
+    var url;
 
-    this.init(mdl, div, number, min, max, sh);
+    this.init(mdl, u, div, number, min, max, sh);
 };
